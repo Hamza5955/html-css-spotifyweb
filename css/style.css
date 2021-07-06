@@ -1,0 +1,494 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+
+.c_white {
+  color: white;
+}
+
+.💀 {
+  color: grey;
+}
+
+p {
+  color: grey;
+}
+.🧣 {
+  width: 100%;
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  margin-bottom: 15px;
+}
+.h3,
+h3 {
+  font-size: 24px;
+}
+.🦪 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 250px;
+  height: 80px;
+  z-index: 2222;
+  padding-right: 30px;
+  background-color: #080b12;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.🦪 .upgrade {
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  padding: 12px;
+}
+.menu_sinistra {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  background-color: black;
+  padding: 20px 0;
+}
+.nav_playlist,
+.nav_name,
+.img_logo {
+  padding: 0 20px;
+}
+.menu_sinistra a {
+  text-decoration: none;
+  color: grey;
+}
+
+.img_logo {
+  height: 50px;
+  margin-bottom: 15px;
+}
+.img_logo_piccolo {
+  padding-left: 20px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+.nav_home ul li,
+.nav_playlist ul li {
+  line-height: 35px;
+}
+
+.nav_home ul li a img {
+  height: 25px;
+  padding-right: 5px;
+}
+
+.nav_home li {
+  padding-left: 20px;
+}
+.nav_home .casetta {
+  border-left: 2px solid lightgreen;
+}
+
+.nav_playlist {
+  flex-grow: 2;
+  overflow-y: auto;
+}
+
+.🥰 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: lightgrey;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  margin-right: 10px;
+}
+
+.🥰 i {
+  position: absolute;
+  font-size: 17px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+.nav_name {
+  background-color: black;
+}
+
+.nav_name .install i {
+  padding-right: 10px;
+}
+.nav_name h5 {
+  display: inline-block;
+}
+
+.finto_hr {
+  border: 1px solid grey;
+  width: 210px;
+  margin: 10px 0;
+}
+
+.omino {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.💦 {
+  margin-top: 80px;
+  padding-bottom: 100px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 250px;
+  min-height: calc(100vh - 80px - 80px);
+  width: calc(100% - 250px);
+  background-color: #141922;
+  overflow-y: scroll;
+}
+
+.main_lista li {
+  display: inline;
+  margin-right: 20px;
+  position: relative;
+}
+
+.main_lista li a {
+  color: grey;
+}
+.main_lista .righina_sotto_verde {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  transform: translateX(-50%);
+  background-color: lightgreen;
+}
+
+.main_lista .rig_hid {
+  visibility: hidden;
+}
+.text-center {
+  text-align: center;
+}
+
+.terza_riga_canzoni img {
+  border-radius: 50%;
+}
+
+footer {
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #282828;
+  padding: 20px 10px;
+  z-index: 3333;
+}
+
+.left_nome_canzone img {
+  height: 50px;
+}
+
+.left_nome_canzone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+}
+
+.immagine_canzone {
+  flex-grow: 1;
+}
+.titolo_canzone {
+  flex-grow: 2;
+}
+.icone_canzone {
+  flex-grow: 1;
+}
+
+.icone_canzone a {
+  color: grey;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+
+.titolo_canzone h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.middle_player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+.barra_sopra {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 70%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.barra_player {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.barra_sotto {
+  display: block;
+  height: 5px;
+  width: 70%;
+  background-color: grey;
+  border-radius: 10px;
+  position: relative;
+}
+
+.pallino_hover {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.middle_player a,
+.🔊 a {
+  color: white;
+  padding-right: 10px;
+}
+.middle_player .play {
+  font-size: 2em;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.play i {
+  transition: all 1s;
+}
+
+.middle_player a:not(.play) {
+  font-size: 1.2em;
+}
+.🔊 {
+  width: 180px;
+}
+
+.barra_volume {
+  display: inline-block;
+  height: 5px;
+  width: 50%;
+  background-color: grey;
+  border-radius: 10px;
+  position: relative;
+}
+.barra_volume_sopra {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 70%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.🦪 .upgrade:hover {
+  transform: scale(1.2);
+}
+
+.menu_sinistra a:hover {
+  color: white;
+}
+
+.main_lista li:hover .rig_hid {
+  visibility: visible;
+}
+.main_lista li:hover a {
+  color: white;
+  text-decoration: none;
+}
+
+.left_nome_canzone a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.icone_player .play:hover i {
+  transform: scale(1.1);
+  color: white;
+}
+
+.barra_volume:hover .pallino_hover,
+.barra_sotto:hover .pallino_hover {
+  visibility: visible;
+}
+
+.barra_volume:hover .barra_volume_sopra,
+.barra_sotto:hover .barra_sopra {
+  background-color: lightgreen;
+}
+
+.flex {
+  display: flex;
+}
+
+.👅 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.song {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  width: calc((100% / 6) - 25px);
+  flex-wrap: wrap;
+}
+
+.song img {
+  width: 100%;
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.song-img {
+  position: relative;
+  width: 100%;
+}
+
+.img i {
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: aliceblue;
+}
+.song:hover .img i {
+  display: block;
+}
+.song:hover {
+  cursor: pointer;
+}
+.song:hover img {
+  opacity: 0.6;
+}
+
+.img {
+  position: relative;
+}
+
+.🍀 h2 {
+  color: white;
+}
+
+.🎼 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.🎵 {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.🕳 {
+  color: grey;
+  margin-top: 10px;
+}
+.🍀 {
+  margin-top: 30px;
+}
+
+#for-you p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#popular p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tondo img {
+  border-radius: 50%;
+}
+h2 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .menu_sinistra {
+    width: 80px;
+  }
+  .nav_home .casetta {
+    border: none;
+  }
+  .finto_hr {
+    border: none;
+  }
+  .nav_name {
+    text-align: center;
+  }
+  .💦 {
+    width: calc(100% - 80px);
+    margin-left: 80px;
+  }
+  .🦪 {
+    left: 80px;
+  }
+  .song {
+    width: calc((100% / 4) - 25px);
+  }
+}
+@media screen and (max-width: 548px) {
+  .song {
+    width: calc((100% / 2) - 25px);
+  }
+  .nav_playlist,
+  .hidden-xs {
+    display: none;
+  }
+  .nav_name h5 {
+    display: none;
+  }
+}
